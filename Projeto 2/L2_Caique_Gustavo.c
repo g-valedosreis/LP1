@@ -213,7 +213,7 @@ int indiceMaiorTemperatura(Registro *r){
 
 float calcularMedia(Registro *r){
 	int i;
-	float media;
+	float media = 0.0;
 	for(i=0; i < qtdRegistros; i++)
 	{
 		media += (r+i)->temperatura;
@@ -224,7 +224,7 @@ float calcularMedia(Registro *r){
 
 float calcularVariancia(Registro *r){
 	int i;
-	float variancia, media;
+	float variancia = 0.0, media;
 	media = calcularMedia(r);
 	for(i=0; i < qtdRegistros; i++)
 	{
@@ -239,7 +239,7 @@ float calcularDesvioPadrao(Registro *r){
 }
 
 int calcularModa(Registro *r){
-	int i,j,cont[qtdRegistros],moda;
+	int i,j,cont[qtdRegistros],moda = 0;
 	for(i=0;i<qtdRegistros;i++)
 	{
 		cont[i]=0;
@@ -311,7 +311,14 @@ void calcularDiaSemana(Registro *r,int ds[])
 			m+=12;
 			a2-=1;
 		}
-		ds[i] = (((int)(2.6*m -0.1) + d + a2 + (a2/4) + (a1/4) - 2 * a1)%7);	
+		int resultado = (((int)(2.6*m -0.1) + d + a2 + (a2/4) + (a1/4) - 2 * a1)%7);
+		
+		if (resultado < 0) {
+			resultado += 7;
+		}
+		
+		ds[i] = resultado;	
+	
 	}
 }
 
