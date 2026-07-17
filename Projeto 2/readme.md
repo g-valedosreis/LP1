@@ -1,7 +1,3 @@
-Aqui está uma descrição clara e estruturada para o seu programa, ideal para colocar no `README.md` do repositório ou apresentar como documentação do projeto:
-
----
-
 ## Descrição do Projeto: Sistema de Monitoramento e Estatísticas de Temperatura
 
 Este é um programa desenvolvido em **C** que funciona como um sistema de gerenciamento de dados climáticos diários. Ele permite ao usuário cadastrar registros de datas específicas acompanhadas de suas respectivas temperaturas, gerando métricas estatísticas e análises detalhadas a partir dos dados fornecidos.
