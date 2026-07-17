@@ -1,0 +1,1 @@
+Esse projeto consiste em um programa feito em C que lê datas e temperaturas ao longo de vários dias dentro de um período, e então pode entregar informações estatíticas e etc sobre as leituras
