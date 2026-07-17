@@ -1,1 +1,11 @@
-Esse projeto consiste em um programa feito em C que lê datas e temperaturas ao longo de vários dias dentro de um período, e então pode entregar informações estatíticas e etc sobre as leituras
+O programa é um Sistema de Monitoramento e Estatísticas de Temperatura desenvolvido em C. Ele funciona através de um menu interativo e permite gerenciar dados climáticos de um período de até 31 dias (um mês).
+
+As suas 4 principais funções são:
+
+Cadastrar Registros: Permite salvar datas e suas respectivas temperaturas, validando se o dia é real (incluindo anos bissextos) e se a temperatura está entre -50°C e 60°C.
+
+Exibir Estatísticas: Calcula e mostra automaticamente a maior temperatura, a média, a variância, o desvio padrão e a moda (a temperatura que mais se repetiu) do período.
+
+Listar Abaixo da Média: Filtra e exibe apenas os dias em que a temperatura ficou menor do que a média calculada.
+
+Mostrar Dias da Semana: Descobre e exibe dinamicamente o dia da semana (ex: Segunda-feira, Domingo) correspondente a cada data digitada usando um cálculo matemático.
